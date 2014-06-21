@@ -1,8 +1,6 @@
 package dio.homework.ex1pojo;
 
-/**
- * Created by Димон on 21.06.2014.
- */
+
 public class Main {
     public static void main(String[] args) {
         Product product1 = new Product("Samsung S5660", 203, 20, 40, 2, 60, Category.SMARTPHONE);
@@ -14,5 +12,6 @@ public class Main {
         System.out.println("Compare with equals()");
         System.out.println(product1.equals(product2));
         System.out.println(product1.equals(product3));
+        System.out.println(product1);
     }
 }

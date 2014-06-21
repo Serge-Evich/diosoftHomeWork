@@ -1,8 +1,6 @@
 package dio.homework.ex1pojo;
 
-/**
- * Created by Димон on 21.06.2014.
- */
+
 public class Product {
     private final String name;
     private final double price;
@@ -12,7 +10,7 @@ public class Product {
     private final int weight;
     private final Category category;
 
-    Product(String name, double price, int height, int length, int width, int weight, Category category) {
+    public Product(String name, double price, int height, int length, int width, int weight, Category category) {
         this.name = name;
         this.price = price;
         this.height = height;
