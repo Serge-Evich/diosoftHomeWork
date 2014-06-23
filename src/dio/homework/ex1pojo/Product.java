@@ -18,8 +18,36 @@ public class Product {
         this.width = width;
         this.weight = weight;
         this.category = category;
-
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
+
+    public int getLength() {
+        return this.length;
+    }
+
+    public int getWidth() {
+        return this.width;
+    }
+
+    public int getWeight() {
+        return this.weight;
+    }
+
+    public Category getCategory() {
+        return this.category;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,14 +84,15 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", height=" + height +
-                ", length=" + length +
-                ", width=" + width +
-                ", weight=" + weight +
-                ", category=" + category +
-                '}';
+        final StringBuilder sb = new StringBuilder("Product{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", price=").append(price);
+        sb.append(", height=").append(height);
+        sb.append(", length=").append(length);
+        sb.append(", width=").append(width);
+        sb.append(", weight=").append(weight);
+        sb.append(", category=").append(category);
+        sb.append('}');
+        return sb.toString();
     }
 }
